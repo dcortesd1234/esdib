@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recicla't - Mis Recompensas</title>
+    
+    <!-- Dependencias (CSS, Fuentes, Iconos) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Configuración personalizada de Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            primary: '#549f35', light: '#6ffc4f', accent: '#20dcfc',
+                            gray: '#6b7280', lightgray: '#f3f4f6',
+                        }
+                    },
+                    fontFamily: { inter: ['Inter', 'sans-serif'] },
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Contenedor que simula el teléfono móvil -->
+    <div class="w-full max-w-sm bg-white rounded-3xl shadow-2xl overflow-hidden border-8 border-gray-900" style="height: 844px;">
+        <div class="h-full flex flex-col">
+
+            <!-- PANTALLA 4: Mis Recompensas -->
+            <div class="flex-grow flex flex-col bg-brand-lightgray">
+                <!-- Header -->
+                <header class="flex items-center justify-between p-4 border-b bg-white">
+                    <a href="perfil.html" class="text-gray-600">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </a>
+                    <h2 class="text-xl font-semibold">Mis Recompensas</h2>
+                    <div class="w-6"></div> <!-- Espaciador -->
+                </header>
+
+                <!-- Lista de Recompensas -->
+                <div class="flex-grow p-4 space-y-4 overflow-y-auto">
+                    
+                    <div class="bg-white p-4 rounded-lg shadow-md flex items-center space-x-4">
+                        <input type="checkbox" class="h-6 w-6 rounded text-brand-primary focus:ring-brand-primary" checked>
+                        <div class="flex-grow"><p class="font-semibold">Recompensa 1</p><p class="text-sm text-gray-500">500 pts</p></div>
+                        <i class="fas fa-ticket-alt text-2xl text-brand-primary"></i>
+                    </div>
+                    
+                    <div class="bg-white p-4 rounded-lg shadow-md flex items-center space-x-4">
+                        <input type="checkbox" class="h-6 w-6 rounded text-brand-primary focus:ring-brand-primary">
+                        <div class="flex-grow"><p class="font-semibold">Recompensa 2</p><p class="text-sm text-gray-500">500 pts</p></div>
+                        <i class="fas fa-coffee text-2xl text-brand-primary"></i>
+                    </div>
+                    
+                    <div class="bg-white p-4 rounded-lg shadow-md flex items-center space-x-4">
+                        <input type="checkbox" class="h-6 w-6 rounded text-brand-primary focus:ring-brand-primary">
+                        <div class="flex-grow"><p class="font-semibold">Recompensa 3</p><p class="text-sm text-gray-500">500 pts</p></div>
+                        <i class="fas fa-tshirt text-2xl text-brand-primary"></i>
+                    </div>
+                    
+                    <div class="bg-white p-4 rounded-lg shadow-md flex items-center space-x-4 opacity-50">
+                        <input type="checkbox" class="h-6 w-6 rounded" disabled>
+                        <div class="flex-grow"><p class="font-semibold">Recompensa Bloqueada</p><p class="text-sm text-gray-500">1000 pts</p></div>
+                        <i class="fas fa-lock text-2xl text-gray-400"></i>
+                    </div>
+                </div>
+                
+                <!-- Barra de Navegación -->
+                <nav class="flex justify-around p-4 border-t border-gray-200 bg-white">
+                    <a href="mapa.html" class="flex flex-col items-center text-gray-400">
+                        <i class="fas fa-map text-2xl"></i>
+                        <span class="text-xs font-medium">Mapa</span>
+                    </a>
+                    <a href="recompensas.html" class="flex flex-col items-center text-brand-primary"> <!-- Activo -->
+                        <i class="fas fa-gift text-2xl"></i>
+                        <span class="text-xs font-medium">Recompensas</span>
+                    </a>
+                    <a href="perfil.html" class="flex flex-col items-center text-gray-400">
+                        <i class="fas fa-user text-2xl"></i>
+                        <span class="text-xs font-medium">Perfil</span>
+                    </a>
+                </nav>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

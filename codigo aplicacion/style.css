@@ -1,0 +1,24 @@
+/* style.css */
+
+body {
+    /* Contenedor general que simula un fondo de escritorio */
+    background-color: #374151; /* Esto es bg-gray-800 de Tailwind */
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1rem; /* p-4 */
+}
+
+/* Estilo para el logo */
+.logo-font {
+    font-weight: 700;
+    font-size: 2rem; /* 32px */
+    letter-spacing: -0.05em;
+    color: #549f35; /* Color primario */
+}
+
+.logo-font span {
+    color: #20dcfc; /* Color acento */
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recicla't - Perfil</title>
+    
+    <!-- Dependencias (CSS, Fuentes, Iconos) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Configuración personalizada de Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            primary: '#549f35', light: '#6ffc4f', accent: '#20dcfc',
+                            gray: '#6b7280', lightgray: '#f3f4f6',
+                        }
+                    },
+                    fontFamily: { inter: ['Inter', 'sans-serif'] },
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Contenedor que simula el teléfono móvil -->
+    <div class="w-full max-w-sm bg-white rounded-3xl shadow-2xl overflow-hidden border-8 border-gray-900" style="height: 844px;">
+        <div class="h-full flex flex-col">
+
+            <!-- PANTALLA 5: Perfil / Configuración -->
+            <div class="flex-grow flex flex-col bg-brand-lightgray">
+                <!-- Header -->
+                <header class="flex items-center justify-between p-4 border-b bg-white">
+                    <div class_ ="w-6 invisible"><i class="fas fa-bars text-2xl"></i></div>
+                    <h2 class="text-xl font-semibold">Perfil</h2>
+                    <div class="w-6"></div> <!-- Espaciador -->
+                </header>
+
+                <!-- Info de Perfil -->
+                <div class="p-6 bg-white flex items-center space-x-4">
+                    <div class="w-16 h-16 bg-brand-primary rounded-full flex items-center justify-center">
+                        <i class="fas fa-user text-white text-3xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold">Nombre</h3>
+                        <p class="text-lg text-brand-primary font-semibold">500 pts</p>
+                    </div>
+                </div>
+
+                <!-- Lista de Opciones -->
+                <div class="flex-grow p-4 space-y-1">
+                    
+                    <a href="#" class="flex items-center justify-between p-4 bg-white rounded-lg shadow-sm">
+                        <span class="font-medium">Historial</span>
+                        <i class="fas fa-chevron-right text-gray-400"></i>
+                    </a>
+                    
+                    <div class="pt-4">
+                        <h4 class="px-4 pb-2 text-sm font-semibold text-gray-500 uppercase">Configuración</h4>
+                        <a href="#" class="flex items-center justify-between p-4 bg-white rounded-t-lg shadow-sm border-b">
+                            <span class="font-medium">Notificaciones</span>
+                            <i class="fas fa-chevron-right text-gray-400"></i>
+                        </a>
+                        <a href="#" class="flex items-center justify-between p-4 bg-white rounded-b-lg shadow-sm">
+                            <span class="font-medium">Idioma</span>
+                            <i class="fas fa-chevron-right text-gray-400"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="pt-4">
+                        <a href="index.html" 
+                            class="flex items-center justify-between p-4 bg-white rounded-lg shadow-sm w-full text-red-500">
+                            <span class="font-medium">Cerrar sesión</span>
+                            <i class="fas fa-sign-out-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Barra de Navegación -->
+                <nav class="flex justify-around p-4 border-t border-gray-200 bg-white">
+                    <a href="mapa.html" class="flex flex-col items-center text-gray-400">
+                        <i class="fas fa-map text-2xl"></i>
+                        <span class="text-xs font-medium">Mapa</span>
+                    </a>
+                    <a href="recompensas.html" class="flex flex-col items-center text-gray-400">
+                        <i class="fas fa-gift text-2xl"></i>
+                        <span class="text-xs font-medium">Recompensas</span>
+                    </a>
+                    <a href="perfil.html" class="flex flex-col items-center text-brand-primary"> <!-- Activo -->
+                        <i class="fas fa-user text-2xl"></i>
+                        <span class="text-xs font-medium">Perfil</span>
+                    </a>
+                </nav>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
